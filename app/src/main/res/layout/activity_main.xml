@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="cn.upfinder.countdownviewdemo.MainActivity">
+
+    <!--<cn.upfinder.learncustomview.view.ChapterOne-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <cn.upfinder.countdownview.view.CircleCountDownView
+        android:id="@+id/ccdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ccdv_arc_width="3dp"
+        app:ccdv_bg_color="#e60f0f"
+        app:ccdv_text_color="#1d1919"
+        app:ccdv_radius="72dp"
+        app:ccdv_time="10" />
+
+</LinearLayout>

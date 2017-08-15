@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleCountDownView">
+
+        <!--view半径-->
+        <attr name="ccdv_radius" format="dimension" />
+        <!--圆环宽度-->
+        <attr name="ccdv_arc_width" format="dimension" />
+        <!--圆环颜色-->
+        <attr name="ccdv_arc_color" format="color" />
+        <!--背景颜色-->
+        <attr name="ccdv_bg_color" format="color" />
+        <!--字体颜色-->
+        <attr name="ccdv_text_color" format="color" />
+        <!--字体大小-->
+        <attr name="ccdv_text_size" format="dimension" />
+        <!--倒计时长-->
+        <attr name="ccdv_time" format="integer" />
+        <!--时间单位-->
+        <attr name="ccdv_time_unit" format="string" />
+        <!--动画方向-->
+        <attr name="ccdv_retreat_type" format="enum">
+            <!--外层圆弧逐渐变长-->
+            <enum name="forward" value="1" />
+            <!--外层圆弧逐渐变短-->
+            <enum name="back" value="2" />
+        </attr>
+        <!--加载进度开始的位置-->
+        <attr name="ccdv_start_location" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>
