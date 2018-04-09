@@ -5,20 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="cn.upfinder.countdownviewdemo.MainActivity">
 
     <!--<cn.upfinder.learncustomview.view.ChapterOne-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <cn.upfinder.countdownview.view.CircleCountDownView
+    <cn.upfinder.countdownview.CircleCountDownView
         android:id="@+id/ccdv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:ccdv_arc_color="@color/colorPrimary"
         app:ccdv_arc_width="3dp"
-        app:ccdv_bg_color="#e60f0f"
-        app:ccdv_text_color="#1d1919"
+        app:ccdv_bg_color="#c0353333"
         app:ccdv_radius="72dp"
-        app:ccdv_time="10" />
+        app:ccdv_text_color="#bcb9b9"
+        app:ccdv_text_size="26dp"
+        app:ccdv_time="10"
+        app:ccdv_time_unit="s" />
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="开始" />
 
 </LinearLayout>

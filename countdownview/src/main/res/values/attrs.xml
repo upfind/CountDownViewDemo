@@ -17,7 +17,11 @@
         <!--倒计时长-->
         <attr name="ccdv_time" format="integer" />
         <!--时间单位-->
-        <attr name="ccdv_time_unit" format="string" />
+        <attr name="ccdv_time_unit" format="enum">
+            <enum name="m" value="3" /><!--分钟-->
+            <enum name="s" value="1" /> <!--默认时间单位秒-->
+            <enum name="ms" value="2" /> <!--毫秒-->
+        </attr>
         <!--动画方向-->
         <attr name="ccdv_retreat_type" format="enum">
             <!--外层圆弧逐渐变长-->

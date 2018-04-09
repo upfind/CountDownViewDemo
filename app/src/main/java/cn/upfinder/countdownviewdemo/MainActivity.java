@@ -3,15 +3,17 @@ package cn.upfinder.countdownviewdemo;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
-import cn.upfinder.countdownview.view.CircleCountDownView;
+import cn.upfinder.countdownview.CircleCountDownView;
 
 public class MainActivity extends AppCompatActivity {
 
 
     private Context context;
     private CircleCountDownView circleCountDownView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(context, "结束", Toast.LENGTH_SHORT).show();
             }
         });
-        circleCountDownView.start();
+//        circleCountDownView.start();
+
+        findViewById(R.id.btnStart).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                circleCountDownView.start();
+            }
+        });
     }
 }
