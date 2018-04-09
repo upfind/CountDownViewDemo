@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CountDownViewDemo.iml" filepath="$PROJECT_DIR$/CountDownViewDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/countdownview/countdownview.iml" filepath="$PROJECT_DIR$/countdownview/countdownview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>

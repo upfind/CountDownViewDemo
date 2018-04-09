@@ -1,6 +1,7 @@
 package cn.upfinder.countdownviewdemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 Toast.makeText(context, "结束", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CountDownActivity.class);
+                startActivity(intent);
+
             }
         });
 //        circleCountDownView.start();
